@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.studysync.controller.DashboardController"
+            stylesheets="@../css/style.css">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <left>
+
+        <VBox spacing="18"
+              prefWidth="250"
+              styleClass="sidebar">
+
+            <Label text="🎓 StudySync"
+                   styleClass="brand"/>
+
+            <Label text="Student Dashboard"
+                   styleClass="sidebar-subtitle"/>
+
+            <VBox spacing="12"
+                  style="-fx-padding: 25 0 0 0;">
+
+                <Button text="📅  Timetable"
+                        onAction="#openTimetable"
+                        styleClass="nav-button"/>
+
+                <Button text="📝  Exams"
+                        onAction="#openExams"
+                        styleClass="nav-button"/>
+
+                <Button text="📚  Assignments"
+                        onAction="#openAssignments"
+                        styleClass="nav-button"/>
+
+                <Button text="📊  Attendance"
+                        onAction="#openAttendance"
+                        styleClass="nav-button"/>
+
+                <Button text="🔔  Reminders"
+                        onAction="#openReminders"
+                        styleClass="nav-button"/>
+
+            </VBox>
+
+            <VBox VBox.vgrow="ALWAYS"
+                  alignment="BOTTOM_CENTER"
+                  spacing="7">
+
+                <Label text="🎓"
+                       styleClass="sidebar-icon"/>
+
+                <Label text="Better Planning"
+                       styleClass="sidebar-message"/>
+
+                <Label text="Brighter Future"
+                       styleClass="sidebar-message"/>
+
+            </VBox>
+
+        </VBox>
+
+    </left>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <center>
+
+        <VBox spacing="10"
+              alignment="TOP_CENTER"
+              styleClass="dashboard-content">
+
+            <!-- Welcome -->
+
+            <Label text="Welcome to StudySync!"
+                   styleClass="dashboard-title"/>
+
+            <Label text="Manage your academic life in one simple place."
+                   styleClass="dashboard-subtitle"/>
+
+
+            <!-- ================= CARDS ================= -->
+
+            <GridPane hgap="25"
+                      vgap="25"
+                      alignment="CENTER"
+                      styleClass="dashboard-grid">
+
+                <!-- TIMETABLE -->
+
+                <VBox GridPane.columnIndex="0"
+                      GridPane.rowIndex="0"
+                      spacing="10"
+                      styleClass="dashboard-card">
+
+                    <Label text="📅"
+                           styleClass="card-icon"/>
+
+                    <Label text="Timetable"
+                           styleClass="card-heading"/>
+
+                    <Label text="View your weekly class schedule."
+                           wrapText="true"
+                           styleClass="card-description"/>
+
+                    <Button text="→"
+                            onAction="#openTimetable"
+                            styleClass="card-arrow"/>
+
+                </VBox>
+
+
+                <!-- EXAMS -->
+
+                <VBox GridPane.columnIndex="1"
+                      GridPane.rowIndex="0"
+                      spacing="10"
+                      styleClass="dashboard-card">
+
+                    <Label text="📝"
+                           styleClass="card-icon"/>
+
+                    <Label text="Exams"
+                           styleClass="card-heading"/>
+
+                    <Label text="Check your upcoming examination schedule."
+                           wrapText="true"
+                           styleClass="card-description"/>
+
+                    <Button text="→"
+                            onAction="#openExams"
+                            styleClass="card-arrow"/>
+
+                </VBox>
+
+
+                <!-- ASSIGNMENTS -->
+
+                <VBox GridPane.columnIndex="2"
+                      GridPane.rowIndex="0"
+                      spacing="10"
+                      styleClass="dashboard-card">
+
+                    <Label text="📚"
+                           styleClass="card-icon"/>
+
+                    <Label text="Assignments"
+                           styleClass="card-heading"/>
+
+                    <Label text="Keep track of assignments and deadlines."
+                           wrapText="true"
+                           styleClass="card-description"/>
+
+                    <Button text="→"
+                            onAction="#openAssignments"
+                            styleClass="card-arrow"/>
+
+                </VBox>
+
+
+                <!-- ATTENDANCE -->
+
+                <VBox GridPane.columnIndex="0"
+                      GridPane.rowIndex="1"
+                      spacing="10"
+                      styleClass="dashboard-card">
+
+                    <Label text="📊"
+                           styleClass="card-icon"/>
+
+                    <Label text="Attendance"
+                           styleClass="card-heading"/>
+
+                    <Label text="Monitor your subject-wise attendance."
+                           wrapText="true"
+                           styleClass="card-description"/>
+
+                    <Button text="→"
+                            onAction="#openAttendance"
+                            styleClass="card-arrow"/>
+
+                </VBox>
+
+
+                <!-- REMINDERS -->
+
+                <VBox GridPane.columnIndex="1"
+                      GridPane.rowIndex="1"
+                      spacing="10"
+                      styleClass="dashboard-card">
+
+                    <Label text="🔔"
+                           styleClass="card-icon"/>
+
+                    <Label text="Reminders"
+                           styleClass="card-heading"/>
+
+                    <Label text="Never miss an important academic task."
+                           wrapText="true"
+                           styleClass="card-description"/>
+
+                    <Button text="→"
+                            onAction="#openReminders"
+                            styleClass="card-arrow"/>
+
+                </VBox>
+
+
+                <!-- STUDYSYNC -->
+
+                <VBox GridPane.columnIndex="2"
+                      GridPane.rowIndex="1"
+                      spacing="10"
+                      styleClass="dashboard-card">
+
+                    <Label text="🎓"
+                           styleClass="card-icon"/>
+
+                    <Label text="StudySync"
+                           styleClass="card-heading"/>
+
+                    <Label text="Plan your studies, stay organized and achieve your goals."
+                           wrapText="true"
+                           styleClass="card-description"/>
+
+                </VBox>
+
+            </GridPane>
+
+        </VBox>
+
+    </center>
+
+</BorderPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.studysync.controller.AddAssignmentController"
+      spacing="15"
+      style="-fx-padding: 30;">
+
+    <Label text="Add Assignment"
+           style="-fx-font-size: 30px; -fx-font-weight: bold;"/>
+
+    <Label text="Create a new assignment"
+           style="-fx-font-size: 16px;"/>
+
+    <Label text="Assignment Title"
+           style="-fx-font-weight: bold;"/>
+
+    <TextField fx:id="titleField"
+               promptText="Enter assignment title"
+               prefWidth="350"/>
+
+    <Label text="Description"
+           style="-fx-font-weight: bold;"/>
+
+    <TextArea fx:id="descriptionField"
+              promptText="Enter assignment description"
+              prefWidth="350"
+              prefRowCount="4"/>
+    <Label text="Due Date"
+           style="-fx-font-weight: bold;"/>
+
+    <DatePicker fx:id="dueDatePicker"
+                prefWidth="350"/>
+    <Label text="Status"
+           style="-fx-font-weight: bold;"/>
+
+    <ComboBox fx:id="statusComboBox"
+              prefWidth="350"
+              promptText="Select status"/>
+    <Button text="Save Assignment"
+            onAction="#saveAssignment"
+            prefWidth="350"
+            style="-fx-font-size: 15px;"/>
+
+
+</VBox>

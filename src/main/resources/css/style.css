@@ -1,0 +1,405 @@
+/* =========================================================
+   STUDYSYNC - MAIN APPLICATION STYLE
+   ========================================================= */
+
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-background-color: #f1f5f9;
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.sidebar {
+    -fx-background-color: #172554;
+    -fx-padding: 35px 25px;
+}
+
+.brand {
+    -fx-text-fill: white;
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+}
+
+.sidebar-subtitle {
+    -fx-text-fill: #cbd5e1;
+    -fx-font-size: 15px;
+}
+
+
+/* =========================================================
+   NAVIGATION BUTTONS
+   ========================================================= */
+
+.nav-button {
+    -fx-pref-width: 190px;
+    -fx-pref-height: 50px;
+
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+
+    -fx-background-radius: 12px;
+
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+
+    -fx-cursor: hand;
+}
+
+.nav-button:hover {
+    -fx-background-color: #1d4ed8;
+}
+
+.nav-button{
+    -fx-background-color: #1e40af;
+}
+
+
+/* =========================================================
+   DASHBOARD
+   ========================================================= */
+
+.dashboard-content {
+    -fx-padding: 55px;
+}
+
+.dashboard-title {
+    -fx-text-fill: #172554;
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+}
+
+.dashboard-subtitle {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 18px;
+}
+
+
+/* =========================================================
+   DASHBOARD CARDS
+   ========================================================= */
+
+.dashboard-card {
+    -fx-pref-width: 270px;
+    -fx-pref-height: 165px;
+
+    -fx-background-color: white;
+
+    -fx-background-radius: 18px;
+
+    -fx-padding: 25px;
+
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(15, 23, 42, 0.12),
+            15,
+            0,
+            0,
+            5
+    );
+}
+
+.dashboard-card:hover {
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(15, 23, 42, 0.22),
+            18,
+            0,
+            0,
+            6
+    );
+}
+
+.card-icon {
+    -fx-font-size: 30px;
+}
+
+.card-heading {
+    -fx-text-fill: #172554;
+    -fx-font-size: 21px;
+    -fx-font-weight: bold;
+}
+
+.card-description {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 15px;
+}
+
+
+/* =========================================================
+   INNER PAGES
+   ========================================================= */
+
+.page-container {
+    -fx-background-color: #f1f5f9;
+
+    -fx-padding: 45px;
+
+    -fx-alignment: TOP_CENTER;
+}
+
+.page-title {
+    -fx-text-fill: #172554;
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+}
+
+.page-subtitle {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 18px;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+   ========================================================= */
+
+.back-button {
+    -fx-background-color: #172554;
+    -fx-text-fill: white;
+
+    -fx-background-radius: 10px;
+
+    -fx-padding: 12px 20px;
+
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+
+    -fx-cursor: hand;
+}
+
+.back-button:hover {
+    -fx-background-color: #1e3a8a;
+}
+
+
+/* =========================================================
+   DATA CARDS
+   ========================================================= */
+
+.data-card {
+    -fx-background-color: white;
+
+    -fx-background-radius: 18px;
+
+    -fx-padding: 25px;
+
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(15, 23, 42, 0.14),
+            15,
+            0,
+            0,
+            5
+    );
+}
+
+.data-card:hover {
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(15, 23, 42, 0.23),
+            18,
+            0,
+            0,
+            6
+    );
+}
+
+
+/* =========================================================
+   CARD TEXT
+   ========================================================= */
+
+.card-title {
+    -fx-text-fill: #172554;
+    -fx-font-size: 21px;
+    -fx-font-weight: bold;
+}
+
+.card-info {
+    -fx-text-fill: #475569;
+    -fx-font-size: 16px;
+}
+
+.card-secondary {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 14px;
+}
+
+
+/* =========================================================
+   SCROLL PANE
+   ========================================================= */
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+
+/* =========================================================
+   GENERAL BUTTON
+   ========================================================= */
+
+.button {
+    -fx-cursor: hand;
+}
+/* ============================= */
+/* DASHBOARD IMPROVEMENTS */
+/* ============================= */
+
+.sidebar-icon {
+    -fx-font-size: 38px;
+}
+
+.sidebar-message {
+    -fx-text-fill: #cbd5e1;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.dashboard-content {
+    -fx-padding: 45px;
+}
+
+.dashboard-title {
+    -fx-text-fill: #172554;
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+}
+
+.dashboard-subtitle {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 18px;
+}
+
+.dashboard-card {
+    -fx-pref-width: 270px;
+    -fx-pref-height: 155px;
+
+    -fx-background-color: white;
+
+    -fx-background-radius: 18px;
+
+    -fx-padding: 22px;
+
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(15, 23, 42, 0.14),
+            15,
+            0,
+            0,
+            5
+    );
+}
+
+.dashboard-card:hover {
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(15, 23, 42, 0.25),
+            20,
+            0,
+            0,
+            7
+    );
+
+    -fx-translate-y: -3px;
+}
+
+.card-icon {
+    -fx-font-size: 30px;
+}
+
+.card-heading {
+    -fx-text-fill: #172554;
+    -fx-font-size: 21px;
+    -fx-font-weight: bold;
+}
+
+.card-description {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 15px;
+    -fx-line-spacing: 2px;
+}
+/* ================================= */
+/* MODERN DASHBOARD CARD DESIGN */
+/* ================================= */
+
+.dashboard-grid {
+    -fx-padding: 30px 10px 10px 10px;
+}
+
+.dashboard-card {
+    -fx-pref-width: 290px;
+    -fx-pref-height: 220px;
+
+    -fx-background-color: white;
+
+    -fx-background-radius: 20px;
+
+    -fx-padding: 25px;
+
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(15, 23, 42, 0.14),
+            18,
+            0,
+            0,
+            6
+    );
+}
+
+.dashboard-card:hover {
+    -fx-translate-y: -4px;
+
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(15, 23, 42, 0.25),
+            22,
+            0,
+            0,
+            8
+    );
+}
+
+.card-icon {
+    -fx-font-size: 34px;
+}
+
+.card-heading {
+    -fx-text-fill: #172554;
+    -fx-font-size: 23px;
+    -fx-font-weight: bold;
+}
+
+.card-description {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 16px;
+
+    -fx-line-spacing: 3px;
+}
+
+.card-arrow {
+    -fx-background-color: #dbeafe;
+    -fx-text-fill: #172554;
+
+    -fx-background-radius: 50px;
+
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+
+    -fx-pref-width: 45px;
+    -fx-pref-height: 40px;
+
+    -fx-cursor: hand;
+}
+
+.card-arrow:hover {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+}

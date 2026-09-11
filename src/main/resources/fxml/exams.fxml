@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.studysync.controller.ExamsController"
+      spacing="15"
+      styleClass="page-container"
+      stylesheets="@../css/style.css">
+
+    <!-- PAGE HEADER -->
+
+    <Label text="📝 Exams"
+           styleClass="page-title"/>
+
+    <Label text="Upcoming examination schedule"
+           styleClass="page-subtitle"/>
+
+    <!-- BACK BUTTON -->
+
+    <Button text="← Back to Dashboard"
+            onAction="#backToDashboard"
+            styleClass="back-button"/>
+
+    <!-- EXAM CARDS -->
+
+    <ScrollPane fitToWidth="true"
+                fitToHeight="true"
+                hbarPolicy="AS_NEEDED"
+                vbarPolicy="NEVER"
+                styleClass="scroll-pane">
+
+        <content>
+
+            <HBox fx:id="examContainer"
+                  spacing="25"
+                  alignment="CENTER"
+                  style="-fx-padding: 25;"/>
+
+        </content>
+
+    </ScrollPane>
+
+</VBox>
